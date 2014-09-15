@@ -2,9 +2,11 @@ import MySQLdb
 import json
 import collections
 
-connstr = 'DRIVER={SQL Server};SERVER=ServerName;DATABASE=popolo;'
-conn = MySQLdb.connect(connstr)
-cursor = conn.cursor()
+db = MySQLdb.connect(host='localhost',
+                     user='anniekramer',
+                     passwd='anniekramer',
+                     db='popolo')
+cursor = db.cursor()
 
 cursor.execute("""
     SELECT *
