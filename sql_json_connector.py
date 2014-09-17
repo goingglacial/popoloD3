@@ -21,11 +21,11 @@ for row in rows:
     d['pop'] = row[1]
     result.append(d)
 
-j = json.dumps(result)
-print j
+print(json.dumps((result), sort_keys=True, indent=4))
+content = (json.dumps((result), sort_keys=True, indent=4))
 
-with open('50pops.json', 'w') as outfile:
-    json.dump(j, outfile)
+with open('popolo.json', 'w') as outfile:
+    json.dump(content, outfile)
 
 print "Done!"
 
