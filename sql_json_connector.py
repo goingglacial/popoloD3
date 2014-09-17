@@ -9,25 +9,24 @@ db = MySQLdb.connect(host='localhost',
 cursor = db.cursor()
 
 cursor.execute("""
-    SELECT *
+    SELECT city, pop
     FROM 50pops
     """)
 
 rows = cursor.fetchall()
-
-# Convert MySQL query to objects of key-value pairs
-# json file = list of objects --> [{},{},{}]
-
-objects_list = []
+result = []
 for row in rows:
-    d = collections.OrderedDict()
-    d['city'] = row.city
-    d['pop'] = row.pop
+    d = dict()
+    d['city'] = row[0]
+    d['pop'] = row[1]
+    result.append(d)
 
-j = json.dumps(objects_list)
-objects_file = '50pops.json'
-f = open(objects_file, 'w')
+j = json.dumps(result)
+print j
+
+with open('50pops.json', 'w') as outfile:
+    json.dump(j, outfile)
 
 print "Done!"
 
-conn.close()
+db.close()
