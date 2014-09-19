@@ -9,7 +9,7 @@ html, body {
 #header {
 	color: blue;
 	font-weight: bold;
-	font-family: 'Lobster', cursive;
+	font-family: 'Pacifico', cursive;
 	text-align: center;
 }
 
@@ -24,20 +24,18 @@ html, body {
 	left: 0;
 }
 
+.citybubble:hover {
+	stroke-width: 5px;
+	stroke: white;
+	opacity: 0.5;
+}
+
 head, body {
-	font-family: 'Cabin-Condensed', sans-serif;
+	font-family: 'Cabin Condensed', sans-serif;
 	text-align: center;
 }
 
-div.tooltip {
-	position: absolute;
-	text-align: center;
-	width: 60px;
-	height: 28px;
-	padding: 2px;
-	font: 12px 'Cabin-Condensed';
-	background: lightsteelblue;
-	border: 0px;
-	border-radius: 8px;
-	pointer-events: none;
+.bubbletext {
+	font-family: 'Cabin Condensed', sans-serif;
+	font-size: 9px;
 }

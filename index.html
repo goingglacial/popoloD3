@@ -8,10 +8,11 @@
 		<link href='http://fonts.googleapis.com/css?family=Lobster|PT+Sans|Pacifico|Cabin+Condensed' rel='stylesheet' type='text/css'>
 		<link href="style.css" rel="stylesheet" type="text/css">
 		<script type="text/javascript" src="d3.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.2.min.js"></script> 
 	</head>
 
 	<body>
-		<h1 id="header">u.s. city populations</h1>
+		<h1 id="header">great american cityscapes</h1>
 		<script>
 			var diameter = 960,
     			format = d3.format(",d"),
@@ -39,17 +40,18 @@
 			    .text(function(d) { return d.className + ": " + format(d.value); });
 
 			node.append("circle")
+				.attr("class", "citybubble")
 			    .attr("r", function(d) { return d.r; })
 			    .style("fill", function(d) { return color(d.packageName); });
 
 			node.append("text")
+				.attr("class", "bubbletext")
 			    .attr("dy", ".3em")
 			    .style("text-anchor", "middle")
-			    .text(function(d) { return d.className; });
+			    .text(function(d) { return d.className; })
 });
 
 			d3.select(self.frameElement).style("height", diameter + "px");
-			
 		</script>
 	</body>
 
