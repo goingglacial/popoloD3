@@ -8,6 +8,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Lobster|PT+Sans|Pacifico|Cabin+Condensed' rel='stylesheet' type='text/css'>
 		<link href="style.css" rel="stylesheet" type="text/css">
 		<script type="text/javascript" src="d3.js"></script>
+		<script type="text/javascript" src="tooltip.js"></script>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.2.min.js"></script> 
 	</head>
 
@@ -42,7 +43,25 @@
 			node.append("circle")
 				.attr("class", "citybubble")
 			    .attr("r", function(d) { return d.r; })
-			    .style("fill", function(d) { return color(d.packageName); });
+			    .style("fill", function(d) { return color(d.packageName); })
+			    .on("mouseover", function(d) {
+			    	console.log(d);
+			    	d3.select(this.parentNode)
+			    		.append("text")
+					    .attr("dy", "1em")
+					    .style("text-anchor", "middle")
+			    		.attr("id", "tooltip")
+			    		.text(d.value);
+			    })
+			    .on("mouseout", function(d) {
+			    	svg.select("#tooltip").remove();
+			    });
+			    // .call(d3.helper.tooltip()
+			    // 	.attr({class: function(d){return value}})
+			    // 	.style({color: 'blue'})
+			    // 	.text(function(d){ return 'pop: ', value
+			    // })
+			    // )	
 
 			node.append("text")
 				.attr("class", "bubbletext")
