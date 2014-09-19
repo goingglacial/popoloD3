@@ -8,7 +8,6 @@
 		<link href='http://fonts.googleapis.com/css?family=Lobster|PT+Sans|Pacifico|Cabin+Condensed' rel='stylesheet' type='text/css'>
 		<link href="style.css" rel="stylesheet" type="text/css">
 		<script type="text/javascript" src="d3.js"></script>
-		<script type="text/javascript" src="tooltip.js"></script>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.2.min.js"></script> 
 	</head>
 
@@ -48,7 +47,7 @@
 			    	console.log(d);
 			    	d3.select(this.parentNode)
 			    		.append("text")
-					    .attr("dy", "1em")
+					    .attr("dy", "1.5em")
 					    .style("text-anchor", "middle")
 			    		.attr("id", "tooltip")
 			    		.text(d.value);
