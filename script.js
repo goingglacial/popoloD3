@@ -12,11 +12,10 @@ var svg = d3.select("body").append("svg")
     .attr("height", diameter)
     .attr("class", "bubble");
 
-d3.json("flare.json", function(error, root) {
+d3.json("bubble.json", function(error, root) {
   var node = svg.selectAll(".node")
-      .data(bubble.nodes(classes(root))
-      .filter(function(d) { return !d.children; }))
-    .enter().append("g")
+      .data(bubble.nodes({children: root}))
+      .enter().append("g")
       .attr("class", "node")
       .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
 
@@ -32,18 +31,5 @@ d3.json("flare.json", function(error, root) {
       .style("text-anchor", "middle")
       .text(function(d) { return d.className.substring(0, d.r / 3); });
 });
-
-// Returns a flattened hierarchy containing all leaf nodes under the root.
-function classes(root) {
-  var classes = [];
-
-  function recurse(name, node) {
-    if (node.children) node.children.forEach(function(child) { recurse(node.name, child); });
-    else classes.push({packageName: name, className: node.name, value: node.size});
-  }
-
-  recurse(null, root);
-  return {children: classes};
-}
 
 d3.select(self.frameElement).style("height", diameter + "px");

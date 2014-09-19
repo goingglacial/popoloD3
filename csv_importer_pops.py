@@ -15,9 +15,9 @@ def main():
     csv_data = csv.reader(file('50pops.csv', "rU"))
     
     for row in csv_data:
-        city, pop = row
-        cursor.execute('INSERT INTO 50pops(city, pop )' \
-          ' VALUES(%r, %r)' % (city, pop,))
+        city, state, pop = row
+        cursor.execute('INSERT INTO 50pops(city, state, pop )' \
+          ' VALUES(%r, %r, %r)' % (city, state, pop,))
 
     # close connection to MySQL database
     cursor.close()

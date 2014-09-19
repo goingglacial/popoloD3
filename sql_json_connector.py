@@ -9,7 +9,7 @@ db = MySQLdb.connect(host='localhost',
 cursor = db.cursor()
 
 cursor.execute("""
-    SELECT city, pop
+    SELECT city, state, pop
     FROM 50pops
     """)
 
@@ -18,7 +18,8 @@ result = []
 for row in rows:
     d = dict()
     d['city'] = row[0]
-    d['pop'] = row[1]
+    d['state'] = row[1]
+    d['pop'] = row[2]
     result.append(d)
 
 print(json.dumps((result), sort_keys=True, indent=4))

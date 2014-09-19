@@ -1,202 +1,216 @@
 [
     {
-        "city": "New York ", 
-        "pop": 8363710
+        "city": "New York ",
+        "state": "New York",
+        "size": 8363710
     }, 
     {
         "city": "Los Angeles ", 
-        "pop": 3833995
+        "state"" "California",
+        "size": 3833995
     }, 
     {
-        "city": "Chicago ", 
-        "pop": 2853114
+        "city": "Chicago ",
+        "state": "Illinois", 
+        "size": 2853114
     }, 
     {
-        "city": "Houston ", 
-        "pop": 2242193
+        "city": "Houston ",
+        "state": "Texas", 
+        "size": 2242193
     }, 
     {
-        "city": "Phoenix ", 
-        "pop": 1567924
+        "city": "Phoenix ",
+        "state": "Arizona", 
+        "size": 1567924
     }, 
     {
-        "city": "Philadelphia ", 
-        "pop": 1447395
+        "city": "Philadelphia ",
+        "state": "Pennsylvania", 
+        "size": 1447395
     }, 
     {
-        "city": "San Antonio ", 
-        "pop": 1351305
+        "city": "San Antonio ",
+        "state": "Texas", 
+        "size": 1351305
     }, 
     {
-        "city": "Dallas ", 
-        "pop": 1279910
+        "city": "Dallas ",
+        "state": "Texas", 
+        "size": 1279910
     }, 
     {
-        "city": "San Diego ", 
-        "pop": 1279329
+        "city": "San Diego ",
+        "state": "California", 
+        "size": 1279329
     }, 
     {
-        "city": "San Jose ", 
-        "pop": 948279
+        "city": "San Jose ",
+        "state": "California", 
+        "size": 948279
     }, 
     {
         "city": "Detroit ", 
-        "pop": 912062
+        "state": "Michigan",
+        "size": 912062
     }, 
     {
-        "city": "San Francisco ", 
-        "pop": 808976
+        "city": "San Francisco ",
+        "state": "California",
+        "size": 808976
     }, 
     {
-        "city": "Jacksonville ", 
-        "pop": 807815
+        "city": "Jacksonville ",
+        "state": "Florida", 
+        "size": 807815
     }, 
     {
         "city": "Indianapolis", 
-        "pop": 798382
+        "size": 798382
     }, 
     {
         "city": "Austin ", 
-        "pop": 757688
+        "size": 757688
     }, 
     {
         "city": "Columbus ", 
-        "pop": 754885
+        "size": 754885
     }, 
     {
         "city": "Fort Worth ", 
-        "pop": 703073
+        "size": 703073
     }, 
     {
         "city": "Charlotte ", 
-        "pop": 687456
+        "size": 687456
     }, 
     {
         "city": "Memphis ", 
-        "pop": 669651
+        "size": 669651
     }, 
     {
         "city": "Baltimore ", 
-        "pop": 636919
+        "size": 636919
     }, 
     {
         "city": "El Paso ", 
-        "pop": 613190
+        "size": 613190
     }, 
     {
         "city": "Boston ", 
-        "pop": 609023
+        "size": 609023
     }, 
     {
         "city": "Milwaukee ", 
-        "pop": 604477
+        "size": 604477
     }, 
     {
         "city": "Denver ", 
-        "pop": 598707
+        "size": 598707
     }, 
     {
         "city": "Seattle ", 
-        "pop": 598541
+        "size": 598541
     }, 
     {
         "city": "Nashville", 
-        "pop": 596462
+        "size": 596462
     }, 
     {
         "city": "Washington ", 
-        "pop": 591833
+        "size": 591833
     }, 
     {
         "city": "Las Vegas ", 
-        "pop": 558383
+        "size": 558383
     }, 
     {
         "city": "Portland ", 
-        "pop": 557706
+        "size": 557706
     }, 
     {
         "city": "Louisville", 
-        "pop": 557224
+        "size": 557224
     }, 
     {
         "city": "Oklahoma City ", 
-        "pop": 551789
+        "size": 551789
     }, 
     {
         "city": "Tucson ", 
-        "pop": 541811
+        "size": 541811
     }, 
     {
         "city": "Atlanta ", 
-        "pop": 537958
+        "size": 537958
     }, 
     {
         "city": "Albuquerque ", 
-        "pop": 521999
+        "size": 521999
     }, 
     {
         "city": "Fresno ", 
-        "pop": 476050
+        "size": 476050
     }, 
     {
         "city": "Sacramento ", 
-        "pop": 463794
+        "size": 463794
     }, 
     {
         "city": "Long Beach ", 
-        "pop": 463789
+        "size": 463789
     }, 
     {
         "city": "Mesa ", 
-        "pop": 463552
+        "size": 463552
     }, 
     {
         "city": "Kansas City ", 
-        "pop": 451572
+        "size": 451572
     }, 
     {
         "city": "Omaha ", 
-        "pop": 438646
+        "size": 438646
     }, 
     {
         "city": "Cleveland ", 
-        "pop": 433748
+        "size": 433748
     }, 
     {
         "city": "Virginia Beach ", 
-        "pop": 433746
+        "size": 433746
     }, 
     {
         "city": "Miami ", 
-        "pop": 413201
+        "size": 413201
     }, 
     {
         "city": "Oakland ", 
-        "pop": 404155
+        "size": 404155
     }, 
     {
         "city": "Raleigh ", 
-        "pop": 392552
+        "size": 392552
     }, 
     {
         "city": "Tulsa ", 
-        "pop": 385635
+        "size": 385635
     }, 
     {
         "city": "Minneapolis ", 
-        "pop": 382605
+        "size": 382605
     }, 
     {
         "city": "Colorado Springs ", 
-        "pop": 380307
+        "size": 380307
     }, 
     {
         "city": "Honolulu", 
-        "pop": 374676
+        "size": 374676
     }, 
     {
-        "city": "Arlington ", 
-        "pop": 374417
+        "city": "Arlington ",
+        "state": "Texas", 
+        "size": 374417
     }
-]s
+]

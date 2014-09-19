@@ -3,6 +3,14 @@ html, body {
 	width: 100%;
 	padding: 0;
 	margin: 0;
+	background-color: #ADD8E6;
+}
+
+#header {
+	color: blue;
+	font-weight: bold;
+	font-family: 'Lobster', cursive;
+	text-align: center;
 }
 
 #full-screen-background-image {
@@ -16,15 +24,20 @@ html, body {
 	left: 0;
 }
 
-#header {
-	color: blue;
-	font-weight: bold;
-	font-family: 'Lobster', cursive;
-	text-align: center;
-}
-#subtitle {
-	color: red;
-	font-family: 'Cabin Condensed', sans-serif;
+head, body {
+	font-family: 'Cabin-Condensed', sans-serif;
 	text-align: center;
 }
 
+div.tooltip {
+	position: absolute;
+	text-align: center;
+	width: 60px;
+	height: 28px;
+	padding: 2px;
+	font: 12px 'Cabin-Condensed';
+	background: lightsteelblue;
+	border: 0px;
+	border-radius: 8px;
+	pointer-events: none;
+}
